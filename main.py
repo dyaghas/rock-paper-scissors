@@ -30,11 +30,14 @@ def get_choices():
                 wins += 1
                 print("You won!")
 
+            elif choices.get("player") == choices.get("computer"):
+                print("tie!")
+
             else:
                 losses += 1
-                print("you lost")
+                print("you lost!")
 
-            scoreboard = "scoreboard: {} / {}".format(wins, losses)
+            scoreboard = f"scoreboard: {wins} / {losses}"
             print(scoreboard)
 
         else:
